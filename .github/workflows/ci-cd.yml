@@ -2,9 +2,9 @@ name: CI - Test frontend & backend
 
 on:
   pull_request:
-    branches: [ main, preprod, dev, feature/**, user/** ]
+    branches: [ main, preprod, develop, feature/**, user/** ]
   push:
-    branches: [ main, preprod, dev ]
+    branches: [ main, preprod, develop ]
 
 jobs:
   test-frontend:
