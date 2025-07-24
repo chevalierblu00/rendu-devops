@@ -1,37 +1,27 @@
-# Node
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
+.pnpm-debug.log*
 
-# Logs
-*.log
+# env files
+.env*
 
-# Env vars
-.env
-.env.*
+# vercel
+.vercel
 
-# Vite / React
-dist/
-build/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# VS Code / IDEs
-.vscode/
-.idea/
-
-# Testing
-coverage/
-jest-html-reporters-*
-
-# Terraform (si utilisé)
-*.tfstate
-*.tfstate.backup
-.terraform/
-
-# Mac/Linux swap files
-*.swp
+# typescript
+*.tsbuildinfo
+next-env.d.ts
