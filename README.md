@@ -110,6 +110,9 @@ Dashboards :
     Vercel Analytics → performance frontend
     Supabase Dashboard → usage & base de données
 
+<img width="1918" height="796" alt="image" src="https://github.com/user-attachments/assets/f1bb9719-9a35-4bb4-8ec5-ab2a49aa925d" />
+
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/b7a234a7-c51b-44c6-91da-8a619a70c1eb" />
 
 
 ## 🛠️ Scripts & Automatisation
