@@ -95,17 +95,16 @@ jobs:
 
   # Job de monitoring et métriques
   monitoring:
-    needs: [deploy-staging, deploy-production]
-    runs-on: ubuntu-latest
-    if: always()
-    
-    steps:
-    - name: Send deployment notification
+    - name: Send deployment notification (Test Webhook)
       uses: 8398a7/action-slack@v3
+      continue-on-error: true
       with:
         status: ${{ job.status }}
         channel: '#deployments'
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+        author_name: 'CI/CD Bot'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       if: always()
 
     - name: Update deployment metrics
