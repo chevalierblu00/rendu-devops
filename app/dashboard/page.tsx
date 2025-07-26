@@ -13,6 +13,7 @@ import { UserProducts } from "@/components/dashboard/user-products"
 import { UserComments } from "@/components/dashboard/user-comments"
 import { supabase } from "@/lib/supabase/client-simple"
 
+
 export default function DashboardPage() {
   const { user, loading } = useAuth()
   const router = useRouter()

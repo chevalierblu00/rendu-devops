@@ -10,6 +10,7 @@ import { ProductsHeader } from "@/components/products/products-header"
 import { ProductsGrid } from "@/components/products/products-grid"
 import { supabase } from "@/lib/supabase/client-simple"
 
+
 export default function ProductsPage() {
   const [products, setProducts] = useState<any[]>([])
   const [loading, setLoading] = useState(true)

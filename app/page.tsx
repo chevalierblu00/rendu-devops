@@ -6,6 +6,7 @@ import Link from "next/link"
 import { StatsCards } from "@/components/home/stats-cards"
 import { RecentProducts } from "@/components/home/recent-products"
 
+
 export default async function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
